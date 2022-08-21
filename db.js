@@ -5,7 +5,7 @@ const pool = new Pool({
 	password: "Seleka11",
 	host: "localhost",
 	port: 5432,
-	database: "jwt_auth_pern",
+	database: "authtodolist",
 });
 
 module.exports = pool;
