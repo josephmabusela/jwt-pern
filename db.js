@@ -1,4 +1,3 @@
-const { Client } = require("pg");
 const Pool = require("pg").Pool;
 require("dotenv").config();
 
@@ -8,6 +7,7 @@ const devConfig = {
 	host: process.env.PG_HOST,
 	port: process.env.PG_PORT,
 	database: process.env.PG_DATABASE,
+	secret: process.env.SECRET_KEY,
 };
 
 const proConfig = process.env.DATABASE_URL; //heroku addons

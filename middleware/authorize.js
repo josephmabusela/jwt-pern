@@ -9,7 +9,7 @@ module.exports = function (req, res, next) {
 	}
 
 	try {
-		const verify = jwt.verify(jwtToken, process.env.jwtSecret);
+		const verify = jwt.verify(jwtToken, process.env.SECRET_KEY);
 
 		req.user = verify.user;
 
