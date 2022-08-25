@@ -8,6 +8,7 @@ const devConfig = {
 	host: process.env.PG_HOST,
 	port: process.env.PG_PORT,
 	database: process.env.PG_DATABASE,
+	secret: process.env.JWT_SECRET,
 };
 
 const proConfig = process.env.DATABASE_URL; //heroku addons
